@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"cd client && npm run build",
+    "install-client":"cd client && npm install",
+    "heroku-postbuild": "npm run install-clent && npm run bulid ",
+    "start": " node server.js",
+    "client" :"cd client && npm start",
+    "server": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-routes": "^1.0.1",
+    "howler": "^2.2.1",
+    "mongoose": "^5.12.13",
+    "mongose": "0.0.2-security",
+    "node-index": "0.0.2",
+    "nodemailer": "^6.6.0",
+    "nodemon": "^2.0.2",
+    "socketio": "^1.0.0"
+  }
+}
