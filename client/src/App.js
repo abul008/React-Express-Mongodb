@@ -13,7 +13,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-
+console.log("hello")
 function App() {
   return (
     <Router>
